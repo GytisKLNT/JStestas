@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="static">
+        <header>
+          <div class="logo"></div>
+        </header>
+
+        <article class="art">
+          <h1>An Amazing Website</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            vitae veniam obcaecati illo ea. Doloremque animi cupiditate quaerat
+            alias vero, consequatur optio laudantium asperiores omnis recusandae
+            similique reprehenderit error quo.
+          </p>
+          <button>Start Now!</button>
+        </article>
+      </section>
+
+      <section class="form">
+        <div class="progres">
+          <span class="progresNumbers"><span class="current"></span>/5</span>
+          <div class="progresBar"></div>
+        </div>
+
+        <form id="activities" name="activities" class="activities">
+          <div class="first">
+            <h2>What do you usually do after work?</h2>
+            <div class="checkBoxes"></div>
+            <div class="buttonContainer">
+              <button id="infoNext" type="submit">Next</button>
+            </div>
+          </div>
+        </form>
+
+        <form class="info" name="info">
+          <div class="infoContainer">
+            <h2>Please fill in your details</h2>
+            <input
+              type="text"
+              name="fName"
+              id="first_name"
+              required
+              placeholder="First Name"
+            />
+
+            <input
+              type="text"
+              name="fName"
+              id="last_name"
+              required
+              placeholder="Last Name"
+            />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Your Email"
+            />
+
+            <select name="Country" id="country" required>
+              <option value="" disabled selected hidden>Your Country</option>
+            </select>
+            <br />
+            <br />
+
+            <input type="checkbox" name="terms" id="terms" required />
+            <label for="terms"
+              >Please accept our
+              <span class="term">Terms and conditions</span></label
+            >
+          </div>
+
+          <div class="buttonContainer">
+            <button id="infoNext" type="submit">Next</button>
+          </div>
+        </form>
+
+        <div class="correct">
+          <div class="correctContainer">
+            <h2>Are these details correct?</h2>
+            <p>Please make sure these details are correct:</p>
+
+            <table>
+              <tbody>
+                <tr>
+                  <td>Loading...</td>
+                  <td>Loading...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="buttonContainer">
+            <button id="delete">Ooops, no</button>
+            <button id="confirm">Iconfirm details are accurate</button>
+          </div>
+        </div>
+
+        <div class="last">
+          <div class="lastContainer">
+            <h2>Please check your email</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, aliquam!</p>
+
+            
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

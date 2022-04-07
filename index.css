@@ -1,0 +1,196 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.static {
+  background: rgb(66, 74, 221);
+  background: linear-gradient(
+    180deg,
+    rgba(66, 74, 221, 1) 0%,
+    rgba(35, 36, 113, 1) 100%
+  );
+  color: rgb(255, 255, 255);
+}
+
+.static header {
+  padding: 0.5rem;
+}
+
+.static header .logo {
+  background-image: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 100px;
+}
+
+.static article {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.static article h1 {
+  color: rgba(255, 255, 255, 0.897);
+  margin: 0;
+}
+.static article p {
+  color: rgba(255, 255, 255, 0.637);
+  font-size: 0.9rem;
+}
+.static article button {
+  background-color: rgba(66, 74, 221);
+  border: none;
+  border-radius: 1rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s ease-in;
+}
+.static article button:hover {
+  background-color: rgb(97, 103, 219);
+}
+
+.form {
+  padding: 3rem 5rem;
+}
+.form .progres span {
+  color: rgb(124, 124, 124);
+}
+
+.checkBoxes,
+.infoContainer,
+.correctContainer,
+.lastContainer {
+  border-bottom: 2px solid rgb(221, 221, 221);
+}
+
+.form .progres .activities h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.checkBoxes .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.option .box {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+form button {
+  background-color: rgba(66, 74, 221);
+  border: none;
+  border-radius: 0.2rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s ease-in;
+}
+.form .progres .activities button:hover {
+  background-color: rgb(97, 103, 219);
+}
+.form .progres .activities button:disabled {
+  background-color: rgb(197, 200, 248);
+  cursor: auto;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info {
+  width: 100%;
+}
+
+.info select,
+.info input {
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgb(156, 156, 156);
+}
+
+#terms {
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.term {
+  color: blue;
+}
+
+table {
+  padding: 2rem 0;
+}
+
+table tr,
+td {
+  padding-left: 3rem;
+}
+
+#delete,
+#confirm {
+  border: none;
+  border-radius: 0.2rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s ease-in;
+}
+
+#delete {
+  color: rgb(0, 0, 0);
+  margin-right: 0.2rem;
+}
+
+#confirm {
+  background-color: rgba(66, 74, 221);
+}
+
+.info,
+.correct,
+.last {
+  display: none;
+}
+
+.progresBar {
+  margin-top: 1rem;
+  width: 0%;
+  height: 3px;
+  background-color: aquamarine;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+@media (min-width: 720px) {
+  main {
+    display: flex;
+    height: 100vh;
+  }
+
+  .form {
+    margin: auto;
+    max-width: 500px;
+    width: 50%;
+  }
+  .static {
+    width: 50%;
+  }
+  .art {
+    margin-top: 25vh;
+  }
+}

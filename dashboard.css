@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(231, 231, 231);
+  padding: 0 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.board {
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.2rem 3rem 0.2rem 1rem;
+  width: 25%;
+  margin: 1rem 0;
+  display: flex;
+}
+
+.info {
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.info p {
+  font-size: 0.7rem;
+  color: rgb(119, 119, 119);
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+}
+
+i {
+  color: rgb(0, 110, 255);
+  font-size: 1.5rem;
+  padding-top: 0.7rem;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.fa-folder {
+  color: red;
+}
+
+.tableContainer {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+}
+
+h3 {
+  margin: 1rem 0;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+}
+
+td:nth-child(1) {
+  width: 10%;
+  text-align: center;
+}
+td:nth-child(2) {
+  width: 60%;
+}
+td:nth-child(3) {
+  width: 30%;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 20px;
+}
+
+.initials {
+  color: rgb(0, 110, 255);
+  width: 35px;
+  height: 35px;
+  padding-top: 8px;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 100%;
+}
+
+@media (max-width: 650px) {
+  .container {
+    display: block;
+  }
+  .board {
+    width: 100%;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="board visitors">
+        <div class="icon"><i class="fa-solid fa-eye"></i></div>
+        <div class="info">
+          <h2 id="visitorsCount">Loading...</h2>
+          <p>Visitors</p>
+        </div>
+      </div>
+      <div class="board signups">
+        <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="info">
+          <h2 id="signupsCount">Loading...</h2>
+          <p>Signups</p>
+        </div>
+      </div>
+      <div class="board countries">
+        <div class="icon"><i class="fa-solid fa-location-pin"></i></div>
+        <div class="info">
+          <h2 id="countriesCount">Loading...</h2>
+          <p>Signup Countries</p>
+        </div>
+      </div>
+      <div class="board names">
+        <div class="icon"><i class="fa-solid fa-folder"></i></div>
+        <div class="info">
+          <h2 id="namesCount">2</h2>
+          <p>Names that are not capitalized</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tableContainer">
+      <h3>Signups</h3>
+      <table name="table">
+        <thead>
+          <tr>
+            <td colspan="2">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search..."
+              />
+            </td>
+            <td>
+              <select name="country" id="country">
+                <option value="" disabled selected hidden>
+                  Search By Country
+                </option>
+              </select>
+            </td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="./dashboard.js"></script>
+  </body>
+</html>
